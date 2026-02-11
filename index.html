@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excellence Code — Technology & Consulting</title>
+  <meta name="description" content="Excellence Code provides cutting-edge technology solutions, creative design, and strategic consulting to help businesses grow." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+  <!-- ==================== HEADER ==================== -->
+  <header id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Excellence<span class="text-cta">Code</span></a>
+
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun" style="display:none"></i>
+        </button>
+        <a href="#contact" class="btn btn-cta btn-rounded">Get in Touch</a>
+      </nav>
+
+      <div class="mobile-controls">
+        <button class="theme-toggle" id="theme-toggle-mobile" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="icon-moon"></i>
+          <i data-lucide="sun" class="icon-sun" style="display:none"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <i data-lucide="menu" class="icon-menu"></i>
+          <i data-lucide="x" class="icon-close" style="display:none"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#case-studies">Case Studies</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-cta btn-rounded btn-full">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero">
+      <div class="hero-bg">
+        <img src="images/hero-bg.jpg" alt="Business team collaborating" />
+        <div class="hero-overlay"></div>
+        <div class="blob blob-teal"></div>
+        <div class="blob blob-cta"></div>
+      </div>
+      <div class="container hero-content reveal">
+        <p class="hero-subtitle">Technology &amp; Consulting</p>
+        <h1 class="hero-title">Transforming Ideas Into <span class="gradient-text">Digital Excellence</span></h1>
+        <p class="hero-desc">We help businesses grow with cutting-edge technology solutions, creative design, and strategic consulting tailored to your unique goals.</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-cta btn-rounded btn-lg">Request Consultation <i data-lucide="arrow-right" style="margin-left:8px"></i></a>
+          <a href="#services" class="btn btn-outline-teal btn-rounded btn-lg">Our Services</a>
+        </div>
+        <div class="stats-bar">
+          <div class="stat-card">
+            <div class="stat-icon"><i data-lucide="award"></i></div>
+            <div>
+              <p class="stat-value" data-target="13">0</p>
+              <p class="stat-label">Years Experience</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i data-lucide="briefcase"></i></div>
+            <div>
+              <p class="stat-value" data-target="500">0</p>
+              <p class="stat-label">Projects Completed</p>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i data-lucide="users"></i></div>
+            <div>
+              <p class="stat-value" data-target="100">0</p>
+              <p class="stat-label">Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section id="about" class="section bg-white">
+      <div class="container">
+        <div class="about-grid reveal">
+          <div class="about-image-wrap">
+            <img src="images/about.jpg" alt="Team collaboration in office" loading="lazy" />
+            <div class="about-image-accent"></div>
+          </div>
+          <div class="about-text">
+            <p class="section-label">About Us</p>
+            <h2 class="section-heading">Driving Innovation <span class="gradient-text-alt">With Purpose</span></h2>
+            <p class="section-desc">At Excellence Code, we combine deep technical expertise with strategic thinking to help organizations navigate the digital landscape. Our mission is to empower businesses with solutions that create lasting impact and measurable growth.</p>
+            <ul class="highlights">
+              <li><i data-lucide="check-circle" class="text-teal"></i><span>Expert team of developers and consultants</span></li>
+              <li><i data-lucide="check-circle" class="text-teal"></i><span>Tailored solutions for every business</span></li>
+              <li><i data-lucide="check-circle" class="text-teal"></i><span>Proven track record of delivering results</span></li>
+              <li><i data-lucide="check-circle" class="text-teal"></i><span>Dedicated support and partnership</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section id="services" class="section bg-secondary">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Our Services</p>
+          <h2 class="section-heading">Solutions That <span class="gradient-text">Drive Results</span></h2>
+          <p class="section-desc center">We offer a comprehensive suite of technology and consulting services to help your business thrive in the digital age.</p>
+        </div>
+        <div class="services-grid reveal">
+          <div class="service-card">
+            <div class="service-image"><img src="images/service-web.jpg" alt="Website Development" loading="lazy" /></div>
+            <div class="service-body">
+              <div class="service-icon"><i data-lucide="globe"></i></div>
+              <h3>Website Development</h3>
+              <p>Custom, responsive websites built with modern technologies for optimal performance and user experience.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image"><img src="images/service-marketing.jpg" alt="Digital Marketing" loading="lazy" /></div>
+            <div class="service-body">
+              <div class="service-icon"><i data-lucide="trending-up"></i></div>
+              <h3>Digital Marketing</h3>
+              <p>Data-driven marketing strategies including SEO, PPC, and social media to maximize your online presence.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image"><img src="images/service-design.jpg" alt="Design" loading="lazy" /></div>
+            <div class="service-body">
+              <div class="service-icon"><i data-lucide="palette"></i></div>
+              <h3>Design</h3>
+              <p>Stunning UI/UX design, branding, and visual identities that captivate your audience and elevate your brand.</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-image"><img src="images/service-analytics.jpg" alt="Analytics" loading="lazy" /></div>
+            <div class="service-body">
+              <div class="service-icon"><i data-lucide="bar-chart-3"></i></div>
+              <h3>Analytics</h3>
+              <p>Comprehensive data analytics and business intelligence to drive informed decisions and accelerate growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CASE STUDIES ==================== -->
+    <section id="case-studies" class="section bg-white">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Case Studies</p>
+          <h2 class="section-heading">Our Recent <span class="gradient-text">Work</span></h2>
+          <p class="section-desc center">Explore how we've helped businesses achieve their digital goals with innovative solutions.</p>
+        </div>
+        <div class="cases-grid reveal">
+          <div class="case-card">
+            <img src="images/case-ecommerce.jpg" alt="E-Commerce Platform Redesign" loading="lazy" />
+            <div class="case-overlay">
+              <canvas class="mini-chart" data-chart="bar" width="200" height="80"></canvas>
+              <div class="case-meta">
+                <span class="case-category">Web Development</span>
+                <span class="case-metric">+120%</span>
+                <span class="case-metric-label">Revenue Growth</span>
+              </div>
+              <h3>E-Commerce Platform Redesign</h3>
+            </div>
+          </div>
+          <div class="case-card">
+            <img src="images/case-dashboard.jpg" alt="Marketing Campaign Dashboard" loading="lazy" />
+            <div class="case-overlay">
+              <canvas class="mini-chart" data-chart="pie" width="200" height="80"></canvas>
+              <div class="case-meta">
+                <span class="case-category">Analytics</span>
+                <span class="case-metric">45%</span>
+                <span class="case-metric-label">Organic Traffic</span>
+              </div>
+              <h3>Marketing Campaign Dashboard</h3>
+            </div>
+          </div>
+          <div class="case-card">
+            <img src="images/case-fintech.jpg" alt="Brand Identity for FinTech" loading="lazy" />
+            <div class="case-overlay">
+              <canvas class="mini-chart" data-chart="line" width="200" height="80"></canvas>
+              <div class="case-meta">
+                <span class="case-category">Design</span>
+                <span class="case-metric">+95%</span>
+                <span class="case-metric-label">Revenue Increase</span>
+              </div>
+              <h3>Brand Identity for FinTech</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROCESS ==================== -->
+    <section class="section bg-primary-dark">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Our Process</p>
+          <h2 class="section-heading light">How We <span class="gradient-text">Work</span></h2>
+          <p class="section-desc light center">A proven four-step process that ensures exceptional results every time.</p>
+        </div>
+        <div class="process-grid reveal">
+          <div class="process-line"></div>
+          <div class="process-step">
+            <div class="process-icon"><i data-lucide="message-square"></i></div>
+            <span class="process-num">Step 1</span>
+            <h3>Consultation</h3>
+            <p>We listen to your needs and understand your business objectives thoroughly.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon"><i data-lucide="target"></i></div>
+            <span class="process-num">Step 2</span>
+            <h3>Strategy</h3>
+            <p>Our team crafts a tailored roadmap aligned with your goals and market position.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon"><i data-lucide="rocket"></i></div>
+            <span class="process-num">Step 3</span>
+            <h3>Execution</h3>
+            <p>We build and deliver solutions with precision, quality, and agility.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-icon"><i data-lucide="trending-up"></i></div>
+            <span class="process-num">Step 4</span>
+            <h3>Optimization</h3>
+            <p>Continuous improvement through data analysis and performance monitoring.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="section bg-secondary">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-label">Contact Us</p>
+          <h2 class="section-heading">Let's Start a <span class="gradient-text">Conversation</span></h2>
+          <p class="section-desc center">Ready to take your business to the next level? Get in touch with our team today.</p>
+        </div>
+        <div class="contact-grid reveal">
+          <form class="contact-form" onsubmit="event.preventDefault()">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" />
+              <input type="email" placeholder="Email Address" />
+            </div>
+            <div class="form-row">
+              <input type="tel" placeholder="Phone Number" />
+              <input type="text" placeholder="Company Name" />
+            </div>
+            <textarea placeholder="Your Message" rows="5"></textarea>
+            <button type="submit" class="btn btn-cta btn-rounded btn-lg">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p class="contact-value">+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <p class="contact-value">hello@excellencecode.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p class="contact-value">123 Innovation Drive, Tech City, TX 75001</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="logo">Excellence<span class="text-cta">Code</span></h3>
+          <p>Empowering businesses with innovative technology solutions and strategic consulting since 2011.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li>Web Development</li>
+            <li>Digital Marketing</li>
+            <li>UI/UX Design</li>
+            <li>Data Analytics</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+            <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Excellence Code. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
